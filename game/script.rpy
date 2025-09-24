@@ -37,5 +37,6 @@ label start:
     # This ends the game.
 
     # nowy, zajebisty komentarz
+    #kurwa, racja
 
     return
