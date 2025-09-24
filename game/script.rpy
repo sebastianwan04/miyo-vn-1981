@@ -36,4 +36,6 @@ label start:
 
     # This ends the game.
 
+    # nowy, zajebisty komentarz
+
     return
