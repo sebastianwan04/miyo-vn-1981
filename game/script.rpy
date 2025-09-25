@@ -1,4 +1,4 @@
 ﻿
 label start:
-    jump test
+    jump intro
 
