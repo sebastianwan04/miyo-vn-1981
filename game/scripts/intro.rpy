@@ -1,3 +1,3 @@
 label intro:
     $ renpy.movie_cutscene("images/intro_movie.webm")
-    jump test
+    jump day_one
