@@ -19,7 +19,7 @@ label day_one:
 
     mc "Maybe the antennae is crooked or something…"
 
-    show tv broken at 
+    show tv broken 
 
     "I pressed every button I could find, then, in my childish frustration, gave the thing a sharp smack. My uncle stared at me for a moment before he joined in, slapping it around like he was tenderizing a piece of meat after a fight with auntie."
     
