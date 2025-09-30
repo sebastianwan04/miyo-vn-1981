@@ -11,7 +11,7 @@ label day_one:
     "What roused me wasn’t morning light, but the restless shuffle of adults, rising with heavy heads and clouded eyes."
     "The church fête waits for tomorrow, yet the alcohol and laughter started spilling well from early Friday afternoon."
 
-    show bg house with dissolve 
+    show bg house 1 with dissolve 
 
     uncle "Nothing’s playing."
 
