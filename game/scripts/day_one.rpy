@@ -1,5 +1,8 @@
+
 label day_one:
-    mc "I came to after a sleepless blur, stretched across two chairs stitched together, my curled up body covered with someone’s coat. What roused me wasn’t morning light, but the restless shuffle of adults, rising with heavy heads and clouded eyes. The church fête waits for tomorrow, yet the alcohol and laughter started spilling well from early Friday afternoon."
+    mc "I came to after a sleepless blur, stretched across two chairs stitched together, my curled up body covered with someone’s coat."
+    "What roused me wasn’t morning light, but the restless shuffle of adults, rising with heavy heads and clouded eyes."
+    "The church fête waits for tomorrow, yet the alcohol and laughter started spilling well from early Friday afternoon."
 
     show bg house with dissolve 
 
@@ -9,26 +12,33 @@ label day_one:
 
     uncle "This stupid old box. Why’s it all black?" 
 
-    show uncle angry with vpunch
+    show uncle with vpunch
 
     uncle "Hey, kid, you know this tech-no-lo-gee stuff better than I do"
 
     mc "I pushed myself up, rubbing the sleep out of my eyes, and started fiddling with the knobs."
     
-    hide uncle angry
+    hide uncle
 
     mc "Maybe the antennae is crooked or something…"
 
-    show tv broken 
+    show static at truecenter
 
-    "I pressed every button I could find, then, in my childish frustration, gave the thing a sharp smack. My uncle stared at me for a moment before he joined in, slapping it around like he was tenderizing a piece of meat after a fight with auntie."
+    "I pressed every button I could find, then, in my childish frustration, gave the thing a sharp smack."
+    "My uncle stared at me for a moment before he joined in, slapping it around like he was tenderizing a piece of meat after a fight with auntie."
     
     "I barely noticed my mom setting two cups of chicory coffee on the low table, the steam curling into the stale air."
-
+    hide static
+    show mom at right
     mom "Strange… Maybe it’s something to do with the weather. Spare the poor thing, will you?"
 
     mc "She smiled faintly and turned to the radio, spinning the dial in search of the right frequency. Static came in waves, roaring, hissing, screaming. For a moment I thought I could make out words, but they dissolved back into the noise akin of scrunching paper. And then I became happy, my brain suddenly able to truly comprehend what it was hearing."
     
+    "At the same time, the TV graced us with its tepid glow."
+    
+    hide mom
+    show jaruzelski at truecenter
+
     tv "--day, I address you as a soldier and as the head of the Polish government. I address you on matters of the highest importance."
 
     "Our homeland has found itself on the edge of an abyss. The legacy of many generations, the Polish home raised from the ashes, is falling into ruin."
