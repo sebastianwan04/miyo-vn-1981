@@ -1,3 +1,10 @@
+transform jaruzelski_center:
+    xalign 0.5
+    yalign 0.3
+
+
+image jaruzelski = At("images/NPC/Jaruzel/jaruzelski.png", jaruzelski_center)
+image static = At("images/NPC/Jaruzel/static.png", jaruzelski_center)
 
 label day_one:
     mc "I came to after a sleepless blur, stretched across two chairs stitched together, my curled up body covered with someone’s coat."
@@ -22,7 +29,7 @@ label day_one:
 
     mc "Maybe the antennae is crooked or something…"
 
-    show static at truecenter
+    show static
 
     "I pressed every button I could find, then, in my childish frustration, gave the thing a sharp smack."
     "My uncle stared at me for a moment before he joined in, slapping it around like he was tenderizing a piece of meat after a fight with auntie."
@@ -37,7 +44,7 @@ label day_one:
     "At the same time, the TV graced us with its tepid glow."
     
     hide mom
-    show jaruzelski at truecenter
+    show jaruzelski 
 
     tv "--day, I address you as a soldier and as the head of the Polish government. I address you on matters of the highest importance."
 
