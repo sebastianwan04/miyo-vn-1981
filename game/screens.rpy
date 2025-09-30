@@ -115,6 +115,28 @@ screen say(who, what):
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
 
+screen player_input_disable():
+
+    key "K_ESCAPE" action NullAction()
+    key "mouseup_3" action NullAction()
+    key "mouseup_1" action NullAction()
+    key "K_RETURN" action NullAction()
+    key "K_SPACE" action NullAction()
+    key "K_KP_ENTER" action NullAction()
+    key "joy_dismiss" action NullAction() 
+    key "ctrl_K_LEFT" action NullAction() 
+    key "K_TAB" action NullAction() 
+    key "shift_K_PERIOD" action NullAction() 
+    key ">" action NullAction() 
+
+screen intro:
+    image "bg intro.png"
+    text "The world is ending in 6 days.\nIt doesn’t matter how or why.\nIt will end and you can’t do anything about it.\n\n\n\nSpend your time wisely. " ypos 0.2 xpos 0.2 size 52 slow_cps 15
+
+screen day_countdown(date):
+    if date is not None:
+        text date size 52 align(0.5, 0.5)
+
 
 ## Make the namebox available for styling through the Character object.
 init python:

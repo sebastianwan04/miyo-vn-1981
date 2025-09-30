@@ -7,6 +7,8 @@ image jaruzelski = At("images/NPC/Jaruzel/jaruzelski.png", jaruzelski_center)
 image static = At("images/NPC/Jaruzel/static.png", jaruzelski_center)
 
 label day_one:
+    stop music fadeout 1.0
+    stop sound
     mc "I came to after a sleepless blur, stretched across two chairs stitched together, my curled up body covered with someone’s coat."
     "What roused me wasn’t morning light, but the restless shuffle of adults, rising with heavy heads and clouded eyes."
     "The church fête waits for tomorrow, yet the alcohol and laughter started spilling well from early Friday afternoon."
