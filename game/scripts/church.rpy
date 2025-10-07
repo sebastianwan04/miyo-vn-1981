@@ -1,0 +1,2 @@
+label church:
+    return

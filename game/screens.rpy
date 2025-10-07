@@ -333,6 +333,8 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
+        textbutton _("Endings") action ShowMenu("endings")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
@@ -606,6 +608,57 @@ style about_label_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#save https://
 ## www.renpy.org/doc/html/screen_special.html#load
+
+screen endings():
+
+    tag menu
+
+    default page_name_value = FilePageNameInputValue("Endings")
+
+    use game_menu("Endings"):
+
+        button:
+                    style "page_label"
+
+                    xalign 0.5
+
+                    input:
+                        style "page_label_text"
+                        value page_name_value
+        
+        grid 3 2:
+            style_prefix "slot"
+
+            xalign 0.5
+            yalign 0.5
+
+      
+
+            for i in range(3 * 2):
+                $ ending_id = "ending_" + str(i+1)
+                button:
+                    has vbox
+                    if persistent.endings[i] == True:
+                        image "images/endings/" + str(ending_id) + "_mini.png" zoom 0.15 yoffset -5
+                        text "Ending " + str(i+1):
+                            size 30
+                            xalign  0.5
+                            
+                    else:
+                        image "images/endings/ending_locked.png" zoom 0.15 yoffset -5
+                        text "Locked":
+                            size 30
+                            xalign 0.5
+                    xalign 0.5
+                    yalign 0.5
+
+                           
+
+
+
+
+
+
 
 screen save():
 
